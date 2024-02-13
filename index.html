@@ -5,10 +5,11 @@
   <title>Volunteer Form</title>
 </head>
 <body>
+  <div>
   <h1>Volunteer Form</h1>
   <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="POST">
     <fieldset>
-      <legend>My Info</legend>
+      <legend class="highlight">My Info</legend>
       <label for="first_name">First Name:</label><br>
       <input type="text" id="first_name" name="first_name_field"><br>
       <label for="last_name">Last Name:</label><br>
@@ -18,12 +19,16 @@
       <label for="email">Email:</label><br>
       <input type="text" id="email" name="email_field"><br>
       <label for="gender">Gender:</label><br>
-    <input type="radio" id="gender" name="gender_field" value="Male">
+      <input type="radio" id="gender" name="gender_field" value="Male">
       <label for="gender">Male</label><br>
-    <input type="radio" id="gender2" name="gender_field" value="Female">
+      <input type="radio" id="gender2" name="gender_field" value="Female">
       <label for="gender2">Female</label><br>
       <label for="age">Age:</label><br>
-      <input type="text" id="age" name="age_field"><br>			   
+      <select id="age" name="age_field">
+	      <option value="">Select Age</option>
+	      <option value="under 18">Under 18</option>
+          <option value="over 18">Over 18</option>
+      </select><br>	   
     </fieldset>
     <fieldset>
       <legend>My Availability</legend>
@@ -47,6 +52,7 @@
         </fieldset>
         <input type="hidden" id="hidden_field" name="hidden_field" value="Your Name">
         <input type="submit" value="Submit Query">
-    </form>
+   </form>
+    </div>
 </body>
 </html>
