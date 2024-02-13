@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Volunteer Form</title>
+</head>
+<body>
+    <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="POST">
+        <fieldset>
+            <legend>My Info</legend>
+            <label for="first_name">First Name:</label><br>
+            <input type="text" id="first_name" name="first_name_field"><br>
+            <label for="last_name">Last Name:</label><br>
+            <input type="text" id="last_name" name="last_name_field"><br>
+            <label for="phone">Phone:</label><br>
+            <input type="text" id="phone" name="phone_field"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email_field"><br>
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender_field" value="Male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender_field" value="Female">
+            <label for="female">Female</label><br>
+            <label for="age">Age:</label><br>
+            <input type="text" id="age" name="age_field"><br>
+        </fieldset>
+        <fieldset>
+            <legend>My Availability</legend>
+            <label for="days">Days Available:</label><br>
+            <input type="checkbox" id="sunday" name="available_field[]" value="Sunday">
+            <label for="sunday">Sunday</label><br>
+            <!-- Repeat for each day of the week -->
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments_field"></textarea><br>
+        </fieldset>
+        <input type="hidden" id="hidden_field" name="hidden_field" value="Your Name">
+        <input type="submit" value="Submit Query">
+    </form>
+</body>
+</html>
